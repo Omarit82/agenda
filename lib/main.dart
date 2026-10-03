@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(const Agenda());
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class Agenda extends StatelessWidget {
+  const Agenda({super.key});
 
   @override
   Widget build(BuildContext context) {
