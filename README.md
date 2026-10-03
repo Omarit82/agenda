@@ -2,6 +2,8 @@
 
 ## Proyecto en Flutter para TUDAI Mobile 2
 
+Proyecto realizado en conjunto entre Carucci, Ignacio y Roselli, Omar
+
 ## Actividad Obligatoria 1
 
 ### Actividad 1: 
