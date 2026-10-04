@@ -10,6 +10,7 @@ Proyecto realizado en conjunto entre Carucci, Ignacio y Roselli, Omar
 
 Desarrolla una interfaz visual de inicio de, que permita al
 usuario ingresar sus credenciales (nombre de usuario y contraseña)
+*** Se utilizan credenciales hardcodeadas para ingresar a la app: usuario@ejemplo.com // 123456 ***
 mediante campos de texto y un botón para validar la información
 proporcionada. Cuando el usuario presione el botón de validación, se
 verificarán los datos ingresados.

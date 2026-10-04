@@ -1,3 +1,4 @@
+import 'package:agenda/src/view/login.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -10,7 +11,8 @@ class Agenda extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: Scaffold(body: Center(child: Text('Hello World!'))),
+      debugShowCheckedModeBanner: false, // Elimina el baner de depuración
+      home: login(),
     );
   }
 }
