@@ -1,3 +1,4 @@
+import 'package:agenda/src/view/Contactos_Screen.dart';
 import 'package:flutter/material.dart';
 
 class login extends StatefulWidget {
@@ -38,6 +39,10 @@ class _loginState extends State<login> {
           ),
         );
         //TODO: Navegar a la pantalla de contactos
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const ContactosScreen()),
+        );
       } else {
         /** LOGIN INCORRECTO -> Mostrar mensaje de error */
         ScaffoldMessenger.of(context).showSnackBar(
