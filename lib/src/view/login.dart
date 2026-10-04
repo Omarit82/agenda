@@ -1,14 +1,14 @@
-import 'package:agenda/src/view/Contactos_Screen.dart';
+import 'package:agenda/src/view/contactos_screen.dart';
 import 'package:flutter/material.dart';
 
-class login extends StatefulWidget {
-  const login({super.key});
+class Login extends StatefulWidget {
+  const Login({super.key});
 
   @override
-  State<login> createState() => _loginState();
+  State<Login> createState() => _LoginState();
 }
 
-class _loginState extends State<login> {
+class _LoginState extends State<Login> {
   /* Esta es la clave global para validar el formulario*/
   final _formKey = GlobalKey<FormState>();
   /* Estos son los controladores que leen el campo de texto email y pass */
@@ -68,6 +68,24 @@ class _loginState extends State<login> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
+              // Ícono que identifica la aplicación.
+              const Icon(
+                Icons.contact_page,
+                size: 90,
+                color: Colors.green,
+              ),
+              const SizedBox(height: 12),
+
+              // Nombre de la app debajo del ícono.
+              const Text(
+                'Mi Agenda',
+                style: TextStyle(
+                  fontSize: 28,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.green,
+                ),
+              ),
+              const SizedBox(height: 32),
               /** CAMPO DE TEXTO PARA EL CORREO ELECTRÓNICO **/
               TextFormField(
                 controller: _emailController,
