@@ -61,7 +61,7 @@ class _LoginState extends State<Login> {
       appBar: AppBar(title: const Text("Agenda de contactos")),
       body: Container(
         alignment: Alignment.center,
-        padding: const EdgeInsets.all(50.0),
+        padding: const EdgeInsets.all(40.0),
         /** FORMULARIO DE LOGIN **/
         child: Form(
           key: _formKey,
@@ -69,23 +69,19 @@ class _LoginState extends State<Login> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               // Ícono que identifica la aplicación.
-              const Icon(
-                Icons.contact_page,
-                size: 90,
-                color: Colors.green,
-              ),
+              const Icon(Icons.contact_page, size: 70, color: Colors.green),
               const SizedBox(height: 12),
 
               // Nombre de la app debajo del ícono.
               const Text(
                 'Mi Agenda',
                 style: TextStyle(
-                  fontSize: 28,
+                  fontSize: 18,
                   fontWeight: FontWeight.bold,
                   color: Colors.green,
                 ),
               ),
-              const SizedBox(height: 32),
+              const SizedBox(height: 12),
               /** CAMPO DE TEXTO PARA EL CORREO ELECTRÓNICO **/
               TextFormField(
                 controller: _emailController,
@@ -94,6 +90,10 @@ class _LoginState extends State<Login> {
                   labelText: 'Correo electrónico',
                   border: OutlineInputBorder(),
                   prefixIcon: Icon(Icons.email),
+                  contentPadding: EdgeInsets.symmetric(
+                    vertical: 10.0,
+                    horizontal: 10.0,
+                  ),
                 ),
                 validator: (value) {
                   if (value == null || value.isEmpty) {
@@ -105,7 +105,7 @@ class _LoginState extends State<Login> {
                   return null;
                 },
               ),
-              const SizedBox(height: 16.0),
+              const SizedBox(height: 12.0),
               /** CAMPO DE TEXTO PARA LA CONTRASEÑA **/
               TextFormField(
                 controller: _passwordController,
@@ -113,6 +113,10 @@ class _LoginState extends State<Login> {
                 decoration: InputDecoration(
                   labelText: 'Contraseña',
                   border: OutlineInputBorder(),
+                  contentPadding: EdgeInsets.symmetric(
+                    vertical: 10.0,
+                    horizontal: 10.0,
+                  ),
                   prefixIcon: Icon(Icons.lock),
                   suffixIcon: IconButton(
                     icon: Icon(
@@ -136,11 +140,11 @@ class _LoginState extends State<Login> {
               ),
               /** BOTÓN DE INICIAR SESIÓN **/
               Padding(
-                padding: const EdgeInsets.only(top: 16.0),
+                padding: const EdgeInsets.only(top: 12.0),
                 child: ElevatedButton(
                   onPressed: _inicioSesion,
                   style: ElevatedButton.styleFrom(
-                    minimumSize: const Size.fromHeight(50),
+                    minimumSize: const Size.fromHeight(35),
                     // Botón de ancho completo
                   ),
                   child: const Text('Iniciar sesión'),
